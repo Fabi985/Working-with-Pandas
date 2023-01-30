@@ -19,7 +19,7 @@ most_popular_by_month = most_popular_by_month.reindex(new_order, axis=0)
 #-----------------------------------------------------------------------------------------------------------------------------------------#
 
 #This creates a plot for the data "most_popular_by_month" and drops the "Commission (%)" column
-plt.plot(most_popular_by_month.drop(['Commission (%)'], axis=1))
+plt.plot(most_popular_by_month.drop(['Commission (%)'], axis=1),'b.-')
 
 #Displays the "meaning" of the colour on gaph
 plt.legend(["Mean Price"])
